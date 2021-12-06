@@ -2,17 +2,11 @@ These are the scripts I used to complete the [adventofcode.com/2021](https://adv
 Each day's challenge is in its own file named `day<n>.py` under the `src` directory. Data used for each challenge was put in `resources` directory. I've included each day's challenge text as a block comment at the bottom of each script in case the original ever gets lost.
 
 ## Setup
-Create a virtual python environment:
+Create and activate virtual python environment. Then install requirements.
 ```bash
 python3 -m venv .venv
-```
-Install requirements:
-```bash
-python3 -m pip install -r requirements.txt
-```
-Activate virtual environment:
-```bash
 source .venv/bin/activate
+python3 -m pip install -r requirements.txt
 ```
 
 ## Running a day's puzzle
