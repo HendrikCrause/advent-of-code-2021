@@ -1,5 +1,4 @@
 from typing import List
-import numpy as np
 
 
 def sim(ages: List[int], days: int) -> int:
