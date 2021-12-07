@@ -7,27 +7,6 @@ class Point:
     def __repr__(self) -> str:
         return f'({self.x}, {self.y})'
 
-    def __eq__(self, __o: object) -> bool:
-        if not isinstance(__o, Point):
-            return False
-        return self.x == __o.x and self.y == __o.y
-    
-    def __lt__(self, __o: object) -> bool:
-        if not isinstance(__o, Point):
-            return False
-        return self.x < __o.x or self.y < __o.y
-
-    def __gt__(self, __o: object) -> bool:
-        if not isinstance(__o, Point):
-            return False
-        return self.x > __o.x or self.y > __o.y
-
-    def __le__(self, __o: object) -> bool:
-        return self < __o or self == __o
-
-    def __ge__(self, __o: object) -> bool:
-        return self > __o or self == __o
-
 
 class Line:
     def __init__(self, input: str) -> None:
